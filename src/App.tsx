@@ -5,7 +5,7 @@ import { Navbar,Container,Nav } from 'react-bootstrap';
 import { Routes, Route, Link } from 'react-router-dom';
 import Board from './features/board/board';
 import { useDispatch, useSelector } from 'react-redux';
-import { setType } from './features/store/store';
+import { setPattern } from './features/store/store';
 
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
           </Nav>
         </Container>
       </Navbar>
-      <button onClick  ={()=>dispatch(setType({ id: 1, type: 'dd', code: 'k12' }))}>코드 변경</button>
+      <button onClick  ={()=>dispatch(setPattern({ id: 1, type: 'dd', code: 'k12' }))}>코드 변경</button>
       <Routes>
         <Route path = "/board" element = {<Board/>}/>
         <Route />
