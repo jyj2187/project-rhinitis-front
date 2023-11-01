@@ -4,7 +4,6 @@ import { RootState, setPageInfo, setPattern, setPostList } from '../store/store'
 import axios from 'axios';
 import { useEffect } from 'react'
 import { boardPatternType, pageInfoType, postListType } from '../store/storeType';
-import { useInfiniteQuery } from '@tanstack/react-query/build/lib/useInfiniteQuery';
 //만드는 방식
 //우선 하나의 게시판 종류를 완성 후, 추가적으로 게시판 종류를 늘릴 예정
 //1.게시판 테이블에서 게시판 유형 및 게시판 코드를 가져온다. axios (get)
